@@ -32,6 +32,13 @@ if not os.path.exists("model"):
 X, y = load_data()
 X_train, X_test, y_train, y_test = split_data(X, y)
 
+# Create test CSV for Streamlit upload
+
+test_df = X_test.copy()
+test_df["target"] = y_test
+test_df.to_csv("test_data.csv", index=False)
+print("Test file created successfully.")
+
 # Scale for Logistic Regression and K Nearest Neighbor
 
 X_train_scaled, X_test_scaled, scaler = scale_features(X_train, X_test)
