@@ -18,13 +18,13 @@ st.title("Breast Cancer Classification - ML Deployment")
 
 # Load models
 
-logistic = joblib.load("model/logistic.pkl")
-decision_tree = joblib.load("model/decision_tree.pkl")
-knn = joblib.load("model/knn.pkl")
-naive_bayes = joblib.load("model/naive_bayes.pkl")
-random_forest = joblib.load("model/random_forest.pkl")
-xgboost = joblib.load("model/xgboost.pkl")
-scaler = joblib.load("model/scaler.pkl")
+logistic = load("model/logistic.pkl")
+decision_tree = load("model/decision_tree.pkl")
+knn = load("model/knn.pkl")
+naive_bayes = load("model/naive_bayes.pkl")
+random_forest = load("model/random_forest.pkl")
+xgboost = load("model/xgboost.pkl")
+scaler = load("model/scaler.pkl")
 
 models = {
     "Logistic Regression": logistic,
