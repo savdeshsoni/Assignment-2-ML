@@ -45,29 +45,29 @@ c.  Models Used
     Observation
 
     | =================================================================================================== |     
-    | **ML Model Name**            | **Observation about model performance**                              |
+    |   ML Model Name              |   Observation about model performance                                |
     | =================================================================================================== |     
     |                                                                                                     |     
-    | **Logistic Regression**      | Achieved the highest accuracy (98.25%) and MCC (0.9623), indicating  |
+    |   Logistic Regression        | Achieved the highest accuracy (98.25%) and MCC (0.9623), indicating  |
     |                              | excellent overall classification performance. The high precision and |
     |                              | recall (0.9861) suggest balanced detection of both malignant and     |
     |                              | benign cases. The dataset appears highly linearly separable, which   |
     |                              | explains its superior performance.                                   |
-    | **Decision Tree**            | Recorded the lowest accuracy (91.23%) and MCC (0.8174) among all     |
+    |   Decision Tree              | Recorded the lowest accuracy (91.23%) and MCC (0.8174) among all     |
     |                              | models. Although precision was high, recall was comparatively lower, |
     |                              | indicating some misclassification of malignant cases. This may be    |
     |                              | due to overfitting and limited generalization ability.               |
-    | **kNN**                      | Achieved strong performance with 95.61% accuracy and 0.9054 MCC.     |
+    |   kNN                        | Achieved strong performance with 95.61% accuracy and 0.9054 MCC.     |
     |                              | High recall (0.9722) shows effective identification of malignant     |
     |                              | cases. Performance benefited from feature scaling since KNN is       |
     |                              | distance-based.                                                      |
-    | **Naive Bayes**              | Obtained 93.86% accuracy with a strong AUC (0.9878). Despite the     |
+    |   Naive Bayes                | Obtained 93.86% accuracy with a strong AUC (0.9878). Despite the     |
     |                              | independence assumption between features, the model performed well.  |
     |                              | Slightly lower accuracy suggests minor impact of correlated features.|
-    | **Random Forest (Ensemble)** | Achieved 95.61% accuracy and the highest AUC (0.9931). The ensemble  |
+    |   Random Forest (Ensemble)   | Achieved 95.61% accuracy and the highest AUC (0.9931). The ensemble  |
     |                              | approach improved generalization and reduced overfitting. Balanced   |
     |                              | precision and recall indicate stable performance.                    |
-    | **XGBoost (Ensemble)**       | Achieved 94.74% accuracy and the highest AUC (0.9931), demonstrating |
+    |   XGBoost (Ensemble)         | Achieved 94.74% accuracy and the highest AUC (0.9931), demonstrating |
     |                              | excellent class separation. Although slightly lower in accuracy      |
     |                              | compared to Logistic Regression, it provided robust                  |
     |                              | probability-based predictions.                                       |
