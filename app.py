@@ -57,6 +57,8 @@ if uploaded_file is not None:
 
         if hasattr(model, "predict_proba"):
             y_prob = model.predict_proba(X)[:, 1]
+            st.write("First 10 Logistic Regression probabilities (Streamlit):")
+            st.write(y_prob[:10])
         else:
             y_prob = None
 
