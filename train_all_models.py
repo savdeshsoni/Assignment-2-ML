@@ -61,7 +61,7 @@ y_prob_lr = lr.predict_proba(X_test_scaled)[:,1]
 
 results.append(["Logistic Regression",
                 accuracy_score(y_test, y_pred_lr),
-                roc_auc_score(y_test, y_pred_lr),
+                roc_auc_score(y_test, y_prob_lr),
                 precision_score(y_test, y_pred_lr),
                 recall_score(y_test, y_pred_lr),
                 f1_score(y_test, y_pred_lr),

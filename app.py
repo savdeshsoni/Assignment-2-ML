@@ -60,10 +60,6 @@ if uploaded_file is not None:
         else:
             y_prob = None
 
-        
-        # Temp
-        st.write("Exact AUC:", roc_auc_score(y, y_prob))
-        # Temp
         #         
         st.subheader("Evaluation Metrics")
 
