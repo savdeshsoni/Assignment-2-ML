@@ -48,11 +48,6 @@ if uploaded_file is not None:
         X = data.drop("target", axis=1)
         y = data["target"]
 
-        # Temp
-        st.write("First 10 y values (Streamlit):")
-        st.write(y.head(10))
-        # Temp
-
         model = models[model_choice]
 
         if model_choice in ["Logistic Regression", "KNN"]:
@@ -66,6 +61,10 @@ if uploaded_file is not None:
             y_prob = None
 
         
+        # Temp
+        st.write("Exact AUC:", roc_auc_score(y, y_prob))
+        # Temp
+        #         
         st.subheader("Evaluation Metrics")
 
         st.write("Accuracy:", accuracy_score(y, y_pred))
