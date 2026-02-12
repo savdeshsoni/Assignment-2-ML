@@ -48,6 +48,11 @@ if uploaded_file is not None:
         X = data.drop("target", axis=1)
         y = data["target"]
 
+        # Temp
+        st.write("First 10 y values (Streamlit):")
+        st.write(y.head(10))
+        # Temp
+
         model = models[model_choice]
 
         if model_choice in ["Logistic Regression", "KNN"]:
@@ -57,15 +62,10 @@ if uploaded_file is not None:
 
         if hasattr(model, "predict_proba"):
             y_prob = model.predict_proba(X)[:, 1]
-            st.write("Model selected:", model_choice)
-            st.write("Shape of X:", X.shape)
-            st.write("First 10 probabilities:")
-            st.write(y_prob[:10])
         else:
-            st.write("This model does not support predict_proba")
-#        else:
-#            y_prob = None
+            y_prob = None
 
+        
         st.subheader("Evaluation Metrics")
 
         st.write("Accuracy:", accuracy_score(y, y_pred))
