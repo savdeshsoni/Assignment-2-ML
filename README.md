@@ -2,12 +2,14 @@
 Machine Learning Classification Project with Streamlit Deployment
 
 a.  Problem Statement - This project aims to classify breast cancer tumors as malignant or benign using multiple machine learning classification models and deploy them using Streamlit.
+
 b.  Dataset Description - 
     b.1 Dataset: Breast Cancer Wisconsin (Diagnostic)
     b.2 Source: UCI Machine Learning Repository
     b.3 Number of Instances: 569
     b.4 Number of Features: 30
     b.5 Target Variable: Diagnosis (0 = Benign, 1 = Malignant)
+    
 c.  Models Used
     c.1 Logistic Regression
     c.2 Decision Tree
