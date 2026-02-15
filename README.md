@@ -1,6 +1,10 @@
 # Assignment-2-ML
 Machine Learning Classification Project with Streamlit Deployment
 
+The models were trained offline and savdes as .pkl files to support efficient Streamlit Deployment.
+The training logic si provided in Python Scripts, while the serialized models allow fast inference without 
+retaining during application runtime.
+
 a.  Problem Statement - This project aims to classify breast cancer tumors as malignant or benign using multiple machine learning classification models and deploy them using Streamlit.
 
 b.  Dataset Description - 
