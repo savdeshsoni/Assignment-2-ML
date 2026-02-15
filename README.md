@@ -1,7 +1,7 @@
 # Assignment-2-ML
 Machine Learning Classification Project with Streamlit Deployment
 
-The models were trained offline and savdes as .pkl files to support efficient Streamlit Deployment.
+The models were trained offline and saved as .pkl files to support efficient Streamlit Deployment.
 The training logic si provided in Python Scripts, while the serialized models allow fast inference without 
 retaining during application runtime.
 
